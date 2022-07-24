@@ -1,4 +1,6 @@
 import React from 'react';
+import {IoMdInformationCircle} from 'react-icons/io';
+import {GoPrimitiveDot} from 'react-icons/go';
 
 const placeholder = `Reprehenderit non adipisicing dolor pariatur. Adipisicing non proident id officia exercitation consequat amet incididunt dolore incididunt velit reprehenderit voluptate Lorem. Et nulla aute id mollit.
 
@@ -13,7 +15,15 @@ Aliqua sint duis aute Lorem consectetur proident esse labore labore ex cillum. V
 function Editor() {
   return (
     <div className={`fixed left-0 w-[49.8%] h-[90vh] top-[10vh]`}>
-        <h1 className={`bg-subhead h-[5vh] text-subheadText text-xs py-2`}><span className={`bg-black h-full inline-block`}>README.md</span></h1>
+        <div className={`bg-subhead h-[5vh] text-subheadText text-xs`}>
+            <div className={'flex h-full bg-black w-[20%] justify-evenly items-center'}>
+                <IoMdInformationCircle className={`bg-black text-blue`} size={`16px`}/>
+                <h1>
+                    README.md
+                </h1>
+                <GoPrimitiveDot className={`text-[white]`} size={`16px`} />
+            </div>
+        </div>
         <textarea id="editor" className={`w-full h-full border-0 bg-black`} value={placeholder}>
         </textarea>
     </div>
