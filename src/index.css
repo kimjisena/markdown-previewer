@@ -1,8 +1,10 @@
 @tailwind base;
 @tailwind components;
 body {
-    margin: 2rem;
+    padding: 2rem;
     background-color: #1e1e1e;
     color: #d4d4d4;
+    width: 100%;
 }
+
 @tailwind utilities;
