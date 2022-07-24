@@ -12,9 +12,9 @@ Aliqua sint duis aute Lorem consectetur proident esse labore labore ex cillum. V
 
 function Editor() {
   return (
-    <div className={`absolute left-0`}>
-        <h1>Editor</h1>
-        <textarea value={placeholder}>
+    <div className={`fixed left-0 w-[49.8%] h-[90vh] top-[10vh]`}>
+        <h1 className={`bg-subhead h-[5vh] text-subheadText text-xs py-2`}><span className={`bg-black h-full inline-block`}>README.md</span></h1>
+        <textarea id="editor" className={`w-full h-full border-0 bg-black`} value={placeholder}>
         </textarea>
     </div>
   );

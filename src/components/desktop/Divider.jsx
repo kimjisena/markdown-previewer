@@ -2,7 +2,7 @@ import React from 'react';
 
 function Divider() {
   return (
-    <div className={`fixed left-1/2 h-full w-[2px] bg-divider`}>
+    <div className={`fixed left-[49.8%] h-full w-[0.4%] top-[10vh] bg-divider`}>
     </div>
   )
 }
