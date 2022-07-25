@@ -66,17 +66,17 @@ marked.setOptions({
   xhtml: false
 });
 
-const html = marked.parse(placeholder, (err, res) => {
-  if (err) {
-    console.log(err);
-  } else {
-    return res;
-  }
-});
-
 function App() {
   const [text, setText] = useState(placeholder);
-  const [render, setRender] = useState(html);
+  const [render, setRender] = useState('');
+
+  const html = marked.parse(text, (err, res) => {
+    if (err) {
+      console.log(err);
+    } else {
+      return res;
+    }
+  });
 
   const parseText = (event) => {
     setText(event.target.value);
@@ -88,7 +88,7 @@ function App() {
       <Header />
       <Editor text={text} parseText={parseText} />
       <Divider />
-      <Previewer html={render} />
+      <Previewer html={render === '' ? html : render} />
     </>
   );
 }
