@@ -6,10 +6,10 @@ module.exports = {
   ],
   theme: {
     colors: {
-      black: "#1e1e1e",
+      black: "#252526",
       light: "#d4d4d4",
       blue: "#007acc",
-      subhead: "#252526",
+      subhead: "#37373d",
       subheadText: "#a6a6a6"
     },
     extend: {},

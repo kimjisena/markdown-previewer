@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
 
 @tailwind base;
-@tailwind components;
 
 body {
     padding: 2rem;
-    background-color: #1e1e1e;
+    background-color: #252526;
     color: #d4d4d4;
     width: 100%;
 }
@@ -19,4 +18,82 @@ body {
     resize: none;
 }
 
+#preview {
+    line-height: 2rem;
+}
+
+h1 {
+    font-size: 2rem;
+    border-bottom: 1px solid #d4d4d4;
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+}
+
+h2 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    border-bottom: 1px solid #d4d4d4;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+code {
+    color: #CE9178;
+}
+
+img {
+    display: block;
+    max-width: 90%;
+    margin: 2rem auto;
+}
+
+pre {
+    display: block;
+    overflow: auto;
+    background: #1e1e1e;
+    padding: 5px;
+    line-height: 1.2;
+}
+
+blockquote {
+    border-left: 3px solid #007acc;
+    color: #d4d4d4;
+    padding-left: 5px;
+    margin-left: 25px;
+}
+a {
+    color: #007acc;
+}
+
+ul {
+    list-style: disc;
+    margin-left: 2rem;
+}
+
+li ul {
+    margin-left: 2rem;
+}
+
+ol {
+    list-style: number;
+    margin-left: 2rem;
+}
+
+@tailwind components;
 @tailwind utilities;
