@@ -9,15 +9,52 @@ import {VscExtensions} from 'react-icons/vsc';
 import {VscAccount} from 'react-icons/vsc';
 import { VscSettingsGear } from 'react-icons/vsc';
 
-const placeholder = `Reprehenderit non adipisicing dolor pariatur. Adipisicing non proident id officia exercitation consequat amet incididunt dolore incididunt velit reprehenderit voluptate Lorem. Et nulla aute id mollit.
 
-Ex ex enim enim est nisi. Mollit in velit aute veniam in veniam duis et eiusmod. Id laborum pariatur aliquip quis nulla et. Minim pariatur ad fugiat amet. Qui consequat ut consectetur laboris laboris magna ex in cupidatat do occaecat aliqua. In duis consequat consequat nulla adipisicing tempor ad voluptate. Cillum sit qui qui duis labore est magna labore anim ex aute minim laboris.
+const placeholder = `# Welcome to my React Markdown Previewer!
 
-Irure consequat officia culpa quis quis eiusmod labore anim est. Ea excepteur laboris fugiat et in aliquip exercitation cillum aute. Amet anim aliqua voluptate duis fugiat dolore laborum exercitation ex aliquip eu. Duis consectetur et cillum dolore cillum reprehenderit. Fugiat laborum amet id laboris eiusmod dolore nostrud voluptate eu ullamco officia aliqua sint. Sunt aliquip officia consectetur duis ex qui velit et non aliqua laborum voluptate Lorem velit. Mollit enim minim tempor incididunt quis reprehenderit tempor ullamco incididunt reprehenderit commodo mollit excepteur.
+## This is a sub-heading...
+### And here's some other cool stuff:
 
-Adipisicing qui incididunt sunt consectetur officia aliqua tempor cillum ullamco magna id dolor labore. Ea pariatur anim consequat aute cupidatat occaecat aute. Proident elit eu veniam mollit. Irure nisi irure tempor quis voluptate consequat. Culpa eu et do officia reprehenderit minim ea elit commodo irure ut officia. Consequat velit ad tempor dolor ipsum enim incididunt ea veniam ad nulla magna irure ad. Excepteur eiusmod occaecat cupidatat velit eu culpa quis aute amet.
+Here's some code, \`<div></div>\`, between 2 backticks.
 
-Aliqua sint duis aute Lorem consectetur proident esse labore labore ex cillum. Velit ad aliqua non amet aliquip non et minim. Deserunt deserunt dolore ullamco ipsum non enim proident pariatur officia elit. Fugiat minim ullamco occaecat reprehenderit ex. Est excepteur minim esse non velit. Amet aute amet ea occaecat. Consectetur qui magna quis nostrud.`
+\`\`\`js
+// this is multi-line code:
+
+function anotherExample(firstLine, lastLine) {
+  if (firstLine == '\`\`\`' && lastLine == '\`\`\`') {
+    return multiLineCode;
+  }
+}
+\`\`\`
+
+You can also make text **bold**... whoa!
+Or _italic_.
+Or... wait for it... **_both!_**
+And feel free to go crazy ~~crossing stuff out~~.
+
+There's also [links](https://www.freecodecamp.org), and
+> Block Quotes!
+
+And if you want to get really crazy, even tables:
+
+Wild Header | Crazy Header | Another Header?
+------------ | ------------- | -------------
+Your content can | be here, and it | can be here....
+And here. | Okay. | I think we get it.
+
+- And of course there are lists.
+  - Some are bulleted.
+     - With different indentation levels.
+        - That look like this.
+
+
+1. And there are numbered lists too.
+1. Use just 1s if you want!
+1. And last but not least, let's not forget embedded images:
+
+![freeCodeCamp Logo](https://cdn.freecodecamp.org/testable-projects-fcc/images/fcc_secondary.svg)
+`;
+
 
 function Editor() {
   return (
@@ -44,7 +81,7 @@ function Editor() {
                 <GoPrimitiveDot className={`text-[white]`} size={`16px`} />
             </div>
         </div>
-        <textarea id="editor" className={`w-full h-full border-0 bg-black px-[8%]`} value={placeholder}>
+        <textarea id="editor" className={`w-full h-[85vh] border-0 bg-black px-[9%]`} value={placeholder}>
         </textarea>
     </div>
   );
